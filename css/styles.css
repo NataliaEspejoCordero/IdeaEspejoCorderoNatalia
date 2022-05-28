@@ -1,0 +1,450 @@
+* {
+    margin: 0;
+}
+
+/*Fuentes de toda la pagina web*/
+@font-face {
+    font-family: "BrittanySignature";
+    src: url("../fonts/BrittanySignature.ttf");
+}
+
+@font-face {
+    font-family: "CorbelBlack";
+    src: url("../fonts/corbelb.ttf");
+}
+
+@font-face {
+    font-family: "CorbelLight";
+    src: url("../fonts/corbeli.ttf");
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.linkInterno {
+    color: #ec8b61;
+}
+
+p {
+    font-family: "CorbelLight";
+    font-size: 20px;
+    margin-left: 7px;
+}
+
+/*grid index*/
+.grillaIndex {
+    display: grid;
+    grid-template-rows: (auto auto auto auto);
+    grid-template-areas: "header"
+        "mainInicio"
+        "productosDestacados"
+        "footer";
+}
+
+/*ROW 1*/
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.logo {
+    max-width: 300px;
+    height: auto;
+    padding: 3px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menuPrincipal li {
+    font-family: "BrittanySignature";
+    font-size: 30px;
+    /* padding: 5px; */
+}
+
+.menuPrincipal {
+    background-image: linear-gradient(to right, #11979B 50%, #87119B, #ec8b61);
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/* .menuPrincipal:hover {
+    background-image: linear-gradient(to right, #11979B, #87119B, #ec8b61);
+    transition-duration: 2s;
+} */
+.menuDer {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.btnUno {
+    font-family: "CorbelBlack";
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    background-color: #87119b;
+    border: #87119b 3px solid;
+    border-radius: 50px;
+    margin: 3px;
+    /* transition-duration: 1s; */
+}
+
+.btnDos {
+    font-family: "CorbelBlack";
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    background-color: #ec8b61;
+    border: #ec8b61 3px solid;
+    border-radius: 50px;
+    margin: 3px;
+
+}
+
+/* .btnUno:hover {
+    background-color: #ec8b61;
+    color: black;
+    border: solid #ec8b61 3px;
+} */
+
+/*ROW2*/
+#mainInicio {
+    grid-area: mainInicio;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-family: "CorbelBLack";
+    font-size: 25px;
+    margin: 5px;
+    text-align: center;
+}
+
+.pInfo {
+    font-family: "CorbelLight";
+    font-size: 16px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+iframe {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/*ROW 3*/
+.productosDestacados {
+    grid-area: productosDestacados;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+
+}
+
+.productosDestacadosT {
+    grid-area: productosDestacadosT;
+    width: 50%;
+    text-decoration: underline #11979B;
+    text-align: start;
+
+}
+
+h1 {
+    font-family: "CorbelBlack";
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 2px;
+}
+
+.imgProductosDestacados {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+    margin: 10px;
+}
+
+.idProducto {
+    font-family: "CorbelLight";
+    font-size: 20px;
+    text-align: left;
+    padding: 3px;
+    width: 200px;
+}
+
+/*ROW 4*/
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #11979B 50%, #87119B, #ec8b61);
+    background-size: cover;
+    width: 100%;
+    font-family: "CorbelLight";
+
+}
+
+.inicioMenuFooter {
+    font-weight: bolder;
+    margin-left: 10px;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .menuPrincipal li {
+        font-family: "BrittanySignature";
+        font-size: 30px;
+    }
+
+    .menuPrincipal {
+        background-color: #11979B;
+        background-size: cover;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menuPrincipal:hover {
+        background-image: linear-gradient(to right, #11979B, #87119B, #ec8b61);
+        transition-duration: 2s;
+    }
+
+    .menuDer {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .btnHover {
+        font-family: "CorbelBlack";
+        font-size: 15px;
+        color: white;
+        padding: 10px;
+        background-color: #87119b;
+        border: #87119b 3px solid;
+        border-radius: 50px;
+        margin: 3px;
+        transition-duration: 1s;
+    }
+
+    .btnHover:hover {
+        background-color: #ec8b61;
+        color: black;
+        border: solid #ec8b61 3px;
+    }
+
+    .imgProductosDestacados {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 100px;
+    }
+
+    .idProducto {
+        font-family: "CorbelLight";
+        font-size: 20px;
+        text-align: left;
+        align-items: baseline;
+        padding: 3px;
+        width: 200px;
+    }
+
+    .productosDestacadosT {
+        grid-area: productosDestacadosT;
+        width: 50%;
+        text-decoration: underline #11979B;
+        text-align: start;
+        margin-left: 15px;
+    }
+
+    .grillaCatalogo {
+        display: grid;
+        grid-template-rows: repeat(4 auto);
+        grid-template-areas: "header"
+            "mainCatalogo"
+            "mainCatalogo"
+            "footer";
+    }
+
+    .mainCatalogo {
+        grid-area: mainCatalogo;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menuCatalogo {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .todosLosProductos {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+}
+
+
+/*CATAOLOGO*/
+
+.grillaCatalogo {
+    display: grid;
+    grid-template-rows: repeat(3 auto);
+    grid-template-areas: "header"
+        "mainCatalogo"
+        "footer";
+}
+
+.mainCatalogo {
+    grid-area: mainCatalogo;
+    display: flex;
+    flex-direction: row;
+}
+
+.menuCatalogo {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 5px;
+    margin: 5px;
+    justify-content: left;
+}
+
+.menuCatalogo li {
+    font-family: "corbelBlack";
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    border: #11979B 3px solid;
+    border-radius: 50px;
+    color: #11979B;
+    padding: 10px;
+    margin: 5px;
+}
+
+.todosLosProductos {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.imgCatalogo {
+    border-radius: 10px;
+}
+
+.idProductoCatalogo {
+    font-family: "CorbelLight";
+    font-size: 16px;
+    text-align: center;
+    width: 180px;
+}
+
+h3 {
+    font-family: "CorbelBlack";
+    font-size: 19px;
+    text-align: center;
+}
+
+/*hasta aca es lo nuevo sumandole grids------------------------------------------------------------------------------------------------*/
+
+
+/*ingresa a tu cuenta*/
+.mainIngresa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.formCuenta {
+    display: flex;
+    flex-direction: column;
+    border: #11979B 3px solid;
+    border-radius: 130px;
+    padding: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: "CorbelLight";
+    font-size: 16px;
+
+}
+
+.boton {
+    margin: 10px;
+    padding: 5px;
+    background-color: white;
+    border: #87119b 3px solid;
+    border-radius: 20px;
+    font-family: "CorbelBlack";
+
+
+}
+
+/*como comprar*/
+ol {
+    font-family: "CorbelLight";
+    font-size: 30px;
+    margin-top: 25px;
+    margin-left: 20%;
+}
+
+/*PAGINA CONTACTO*/
+.mainContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContacto {
+    display: flex;
+    flex-direction: column;
+    border: #11979B 3px solid;
+    border-radius: 200px;
+    padding: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-family: "CorbelLight";
+    font-size: 16px;
+}
+
+.linksContacto {
+    font-family: "corbelLight";
+    font-size: 20px;
+    margin-top: 20px;
+
+}
