@@ -176,6 +176,7 @@ h1 {
     padding: 2px;
 }
 
+
 .imgProductosDestacados {
     width: 50%;
     display: flex;
@@ -194,6 +195,7 @@ h1 {
 }
 
 /*ROW 4*/
+
 .footer {
     grid-area: footer;
     display: flex;
@@ -204,6 +206,7 @@ h1 {
     font-family: "CorbelLight";
 
 }
+
 
 .inicioMenuFooter {
     font-weight: bolder;
@@ -312,6 +315,7 @@ h1 {
         flex-wrap: wrap;
         align-content: center;
     }
+
 }
 
 
@@ -447,4 +451,8 @@ ol {
     font-size: 20px;
     margin-top: 20px;
 
+}
+
+.animacionTxt{
+    animation-duration: 2s;
 }
