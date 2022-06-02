@@ -6,45 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Me extraña araña - tejidos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
-<body>
-    <div class="grillaIndex">
-        <header>
+<body class="container-fluid">
 
-            <div>
-                <img class="logo animate__animated animate__fadeInRightBig" src="images/logo.png" alt="logo">
-            </div>
 
+    <header>
+
+        <div class="container border text-center">
+            <img class="logo animate__animated animate__fadeInRightBig" src="images/logo.png" alt="logo">
+        </div>
+        <div class="container">
             <nav>
-
                 <ul class="menuPrincipal">
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#sobreNosotros">Sobre nosotros</a></li>
                     <li><a href="Pages/catalogo.htm">Catalogo</a></li>
                     <li><a href="Pages/contacto.html">Contacto</a></li>
                 </ul>
+        </div>
 
-                <ul class="menuDer">
-                    <li><a class="btnUno btnHover" href="Pages/ingresa-a-tu-cuenta.html">Ingresa a tu cuenta</a></li>
-                    <li><a class="btnDos btnHover " href="Pages/carrito-de-compras.html">Carrito</a></li>
-                </ul>
-            </nav>
-        </header>
+        <ul class="menuDer">
+            <li><a class="btnUno btnHover" href="Pages/ingresa-a-tu-cuenta.html">Ingresa a tu cuenta</a>
+            </li>
+            <li><a class="btnDos btnHover " href="Pages/carrito-de-compras.html">Carrito</a></li>
+        </ul>
+        </nav>
+    </header>
 
-        <main>
-            <div id="mainInicio">
+    <main>
+        <div id="mainInicio">
 
+            <div class="container border text-center">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Df5AWE_9Mow?autoplay=1"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen mute></iframe>
+                    allowfullscreen mute></iframe> </div>
 
-
-                <h2 id="#sobreNosotros">NOS PRESENTAMOS</h2>
-                <p class="pInfo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio libero saepe
+            <div class="container parrafo">
+                
+                <h2 class="display-5 border text-center" id="#sobreNosotros">NOS PRESENTAMOS</h2>
+                <p class="border text-center pInfo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
+                    libero saepe
                     dignissimos
                     repellendus hic nisi
                     atque fugit amet architecto doloremque deserunt excepturi ipsum, voluptatibus officia accusamus
@@ -57,68 +64,95 @@
                     voluptatem!
                     Repudiandae minus eaque voluptates, ipsa dolorem nesciunt dolores minima optio dicta autem? Quod
                     provident
-                    obcaecati necessitatibus voluptates officiis, reiciendis at exercitationem hic rem dignissimos quam
+                    obcaecati necessitatibus voluptates officiis, reiciendis at exercitationem hic rem dignissimos
+                    quam
                     aut
                     nesciunt
                     accusamus nulla cumque error voluptatibus id veritatis deserunt odio. Quod labore unde expedita
                     facilis
                     similique numquam est?</p>
-
-                <h2>EN QUE NOS INSPIRAMOS</h2>
-
-                <p class="pInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint at dignissimos earum
-                    veritatis ut
-                    a quos ad
-                    illum amet neque minima autem fuga, quisquam odio soluta qui? Aliquam repellat reiciendis facilis
-                    laboriosam
-                    quis temporibus eius nam dolorum repudiandae quidem expedita amet, perferendis minus veniam! Cumque
-                    vitae
-                    suscipit ratione ipsam quis.</p>
-
+                
             </div>
 
-            <section class="productosDestacados">
-                <h1 class="productosDestacadosT">Productos destacados:</h1>
+            <div class="container parrafo">
+                 <h2 class="display-5 border text-center">EN QUE NOS INSPIRAMOS</h2>
+                <p class="border text-center pInfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint at
+                    dignissimos earum
+                    veritatis ut
+                    a quos ad
+                    illum amet neque minima autem fuga, quisquam odio soluta qui? Aliquam repellat reiciendis
+                    facilis
+                    laboriosam
+                    quis temporibus eius nam dolorum repudiandae quidem expedita amet, perferendis minus veniam!
+                    Cumque
+                    vitae
+                    suscipit ratione ipsam quis.</p>
+                
+            </div>
+        </div>
 
-                <div class="imgProductosDestacados">
-                    <img src="images/cuelloInfinito.jpg" alt="Cuello infinito" width="150px" height="150px">
-                    <p class="idProducto">Cuello infinito tejido con las manos</p>
-
-
-
-                    <img src="images/candyCrushBlanco.jpg" alt="Gorrito gorrito Candy Crush" width="150px"
-                        height="150px">
-                    <p class="idProducto">Gorrito "Candy crush"</p>
-
-
-
-                    <img src="images/chalColor.jpg" alt="Chal color" width="150px" height="200px">
-                    <p class="idProducto">Chal multicolor, tejido a crochet</p>
+        <div class="container productosDestacados">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="display-5 productosDestacadosT">Productos destacados:</h2>
                 </div>
-            </section>
-    </div>
+
+                <div class="col-md-6">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade carrusel" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/candyCrushBlanco.jpg" class="d-block w-100" alt="candyCrushBlanco">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/chalAzul.jpg" class="d-block w-100" alt="chalAzul">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/chalColor.jpg" class="d-block w-100" alt="chalColor">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
 
 
     </main>
+    
+        <footer>
+            <div class="footer">
+                <a class="inicioMenuFooter" href="#">Inicio</a>
+                <nav class="otraNavFooter">
+                    <ul>
+                        <li><a href="Pages/como-comprar.htm">Como comprar</a></li>
+                        <li><a href="Pages/productos-personalizados.html">Productos personalizados</a></li>
+                        <li><a href="Pages/envios.html">Envios</a></li>
+                    </ul>
+                </nav>
 
-    <footer>
-        <div class="footer">
-            <a class="inicioMenuFooter" href="#">Inicio</a>
-            <nav class="otraNavFooter">
-                <ul>
-                    <li><a href="Pages/como-comprar.htm">Como comprar</a></li>
-                    <li><a href="Pages/productos-personalizados.html">Productos personalizados</a></li>
-                    <li><a href="Pages/envios.html">Envios</a></li>
-                </ul>
-            </nav>
-
-            <h2 class="linkIg">Seguinos en <a href="https://www.instagram.com/meextranaaranatejidos/"> <img
-                        src="images/instagram blanco.png" alt="" width="40px" height="40px"> </a>
-            </h2>
-        </div>
-    </footer>
-
+                <h2 class="linkIg">Seguinos en <a href="https://www.instagram.com/meextranaaranatejidos/"> <img
+                            src="images/instagram blanco.png" alt="" width="40px" height="40px"> </a>
+                </h2>
+            </div>
+        </footer>
+   
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

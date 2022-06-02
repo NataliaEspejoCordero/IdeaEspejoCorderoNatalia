@@ -6,36 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
-<body>
+<body class="container-fluid">
+
     <header>
 
-        <div>
-            <img class="logo animate__animated animate__fadeInRightBig" src="../images/logo.png" alt="logo">
+        <div class="container border text-center">
+            <img class="logo animate__animated animate__fadeInRightBig" src="/images/logo.png" alt="logo">
+        </div>
+        <div class="container">
+            <nav>
+                <ul class="menuPrincipal">
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/Pages/catalogo.htm">Catalogo</a></li>
+                    <li><a href="/Pages/contacto.html">Contacto</a></li>
+                </ul>
         </div>
 
-        <nav>
-
-            <ul class="menuPrincipal">
-                <li "><a href="../index.html">Inicio</a></li>
-                <li><a href="./catalogo.htm">Catalogo</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-
-            <ul class="menuDerecha">
-                <li><a class="btnVioleta" href="./ingresa-a-tu-cuenta.html">Ingresa a tu cuenta</a></li>
-                <li><a class="btnVioleta" href="./carrito-de-compras.html">Carrito</a></li>
-            </ul>
+        <ul class="menuDer">
+            <li><a class="btnUno btnHover" href="Pages/ingresa-a-tu-cuenta.html">Ingresa a tu cuenta</a>
+            </li>
+            <li><a class="btnDos btnHover " href="Pages/carrito-de-compras.html">Carrito</a></li>
+        </ul>
         </nav>
     </header>
 
-
+<div class="container comoComprar">
     <main class="animate_animated animate__fadeIn animacionTxt">
 
-        <h2> Como realizar tu compra en Me extraña araña.</h2>
+        <h2 class="display-5"> Como realizar tu compra en Me extraña araña.</h2>
 
         <ol>
             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, culpa!</li>
@@ -50,10 +54,11 @@
 
 
     </main>
+</div>
 
     <footer>
         <div class="footer">
-            <a class="inicioMenuFooter" href="../index.html">Inicio</a>
+            <a class="inicioMenuFooter" href="/index.html">Inicio</a>
             <nav class="otraNavFooter">
                 <ul>
                     <li><a href="/Pages/como-comprar.htm">Como comprar</a></li>
@@ -67,6 +72,11 @@
             </h2>
         </div>
     </footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 </html>
 
