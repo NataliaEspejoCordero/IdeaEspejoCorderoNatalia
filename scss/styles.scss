@@ -1,6 +1,8 @@
 @import 'variables';
 @import 'color'
 
+
+
 .barraMenu{
     background-color: $color-principal;
     background-size: cover;
@@ -14,8 +16,7 @@
             font-size: 30px;
             color: white;
             padding: 10px;
-
-         }
+}
 }
 
 .btnDerecha{
