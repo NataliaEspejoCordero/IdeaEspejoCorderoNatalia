@@ -1,75 +1,79 @@
-@import 'variables';
-@import 'color'
+@import 'tipografia';
+@import 'colores';
+@import 'mixins';
 
 
+@function color($color-name){
+    @return map-get($colores, $color-name);
+}
 
-.barraMenu{
-    background-color: $color-principal;
+.menuBarra{
+    background-color: color(primario);
     background-size: cover;
 
     &:hover{
-        background-image: $fondo;
+        background-image: color(gradiente);
     }
-
-        li{
-            font-family: "brittany";
-            font-size: 30px;
-            color: white;
-            padding: 10px;
+    li{
+        padding: 10px;
+        font-family:"brittany";
+        color: color(texto-blanco);
+        font-size: 30px; 
 }
 }
 
 .btnDerecha{
-    .btnHover{
+.btnHover{
+    padding: 10px;
+    margin: 3px;
+    border: color(secundario) 3px solid;
+    border-radius: 50px;
+    background-color: color(secundario);
     font-family: "corbelB";
     font-size: 15px;
-    color: white;
-    padding: 10px;
-    background-color: $color-secundario;
-    border: $color-secundario 3px solid;
-    border-radius: 50px;
-    margin: 3px;
+    color: color(texto-blanco);
     transition-duration: 1s;
-
-    &:hover{
-        background-color: $color-terciario;
-        color: black;
-        border: solid $color-terciario 3px
-        }
-    }
 }
-
+&:hover{
+    background-color: color(terciario);
+    color: black;
+    border: color(terciario) solid  3px;
+}
+}
 
 .parrafoInfo{
     margin-top: 10px;
     margin-bottom: 10px;
     .tituloInfo{
         font-family: "corbelB";
-        font-size: 30px;
+        @include sizeFuente(30px);
     }
     .textoInfo{
         font-family: "corbelL";
-        font-size: 18px;
+        @include sizeFuente(20px);
     }
 }
 
 .footer{
-    background-image: $fondo;
+    background-image: color(gradiente);
+    .btnVolver{
+        @extend btnHover;
+        background-color: color(terciario);
+        border: color(terciario);
+    }
     .menuUno{
         font-family: "corbelL";
-        font-size: 16px;
+        @include sizeFuente(16px);
         font-style: italic;
     }
     .menuDos{
         font-family: "corbelB";
-        font-size: 16px;
+        @include sizeFuente(17px);
         font-style: italic;
     }
-
 .linkIg{
     font-family: "corbelB";
-    font-size: 18px;
+    @include sizeFuente(18px);
     color: white;
 }
-
 }

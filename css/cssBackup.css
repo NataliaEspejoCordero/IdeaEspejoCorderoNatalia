@@ -215,3 +215,95 @@ ol {
 .animacionTxt{
     animation-duration: 2s;
 }
+
+
+/*sass 1
+
+ .barraMenu{
+    background-color: $color-principal;
+    background-size: cover;
+
+    &:hover{
+        background-image: $fondo;
+    }
+
+        li{
+            font-family: "brittany";
+            font-size: 30px;
+            color: white;
+            padding: 10px;
+}
+}
+
+.btnDerecha{
+    .btnHover{
+    font-family: "corbelB";
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    background-color: $color-secundario;
+    border: $color-secundario 3px solid;
+    border-radius: 50px;
+    margin: 3px;
+    transition-duration: 1s;
+
+    &:hover{
+        background-color: $color-terciario;
+        color: black;
+        border: solid $color-terciario 3px
+        }
+    }
+}
+
+
+.parrafoInfo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    .tituloInfo{
+        font-family: "corbelB";
+        font-size: 30px;
+    }
+    .textoInfo{
+        font-family: "corbelL";
+        font-size: 18px;
+    }
+}
+
+.footer{
+    background-image: $fondo;
+    .menuUno{
+        font-family: "corbelL";
+        font-size: 16px;
+        font-style: italic;
+    }
+    .menuDos{
+        font-family: "corbelB";
+        font-size: 16px;
+        font-style: italic;
+    }
+
+.linkIg{
+    font-family: "corbelB";
+    font-size: 18px;
+    color: white;
+}
+
+}
+ */
+
+
+
+
+
+
+
+ 
+
+/* mixins */
+
+
+
+/* tipografia */
+
+
+/* styles.scss */
