@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "brittany";
+    src: url(/fonts/BrittanySignature.ttf);
+}
+@font-face {
+    font-family: "corbeL";
+    src: url(/fonts/corbeli.ttf);
+}
+@font-face {
+    font-family: "corbelB";
+    src: url(/fonts/corbelb.ttf);
+}
+
+$titulo: font-family "corbelB", font-size 40px, padding 10px;
+

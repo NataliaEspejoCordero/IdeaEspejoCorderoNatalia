@@ -1,0 +1,22 @@
+@import 'color';
+
+
+@mixin botonFormulario ($color){
+    font-family: "corbelB";
+    font-size: 17px;
+    padding: 10px;
+    border: map-get($colores, $color) 3px solid;
+    border-radius: 50px;
+    transition-duration: 0.5s;
+
+    &:hover {
+      color: map-get($colores, texto);
+      background-color: map-get($colores, $color);
+    }
+  }
+    
+
+    
+  
+
+

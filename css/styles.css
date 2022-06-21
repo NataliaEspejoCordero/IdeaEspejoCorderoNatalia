@@ -1,219 +1,196 @@
-* {
-    margin: 0;
-}
-
-/*Fuentes de toda la pagina web*/
 @font-face {
-    font-family: "BrittanySignature";
-    src: url("../fonts/BrittanySignature.ttf");
-}
+  font-family: "brittany";
+  src: url(/fonts/BrittanySignature.ttf); }
 
 @font-face {
-    font-family: "CorbelBlack";
-    src: url("../fonts/corbelb.ttf");
-}
+  font-family: "corbeL";
+  src: url(/fonts/corbeli.ttf); }
 
 @font-face {
-    font-family: "CorbelLight";
-    src: url("../fonts/corbeli.ttf");
-}
+  font-family: "corbelB";
+  src: url(/fonts/corbelb.ttf); }
+
+.info, main .texto .parrafo, .mainContacto .parrafo, .mainOtras .pasos li, .mainOtras .parrafo {
+  font-family: "corbeL";
+  font-size: 18px;
+  text-align: justify; }
+
+.principal, main .texto .titulo, .mainContacto .titulo, .mainCuenta .titulo, .mainOtras .titulo {
+  font-family: "corbelB";
+  font-size: 40px;
+  padding: 10px; }
 
 ul {
-    list-style-type: none;
-}
+  text-decoration: none;
+  list-style: none; }
 
-.linkInterno {
-    color: #ec8b61;
-}
-
-h2{
-    font-family: "CorbelLight";
-}
-
-
-
-
-/* nuevo footer con bootstrap */
-.barraMenu{
-    background-color: #11979B;
-    background-size: cover;
-    font-family: "BrittanySignature" ;
+/*------------------------INDEX-------------------------*/
+header .barraMenu {
+  background-color: #11979b;
+  background-size: cover; }
+  header .barraMenu:hover {
+    background-image: linear-gradient(to right, #11979b 30%, #87119b, #ec8b61); }
+  header .barraMenu li {
+    font-family: "brittany";
     font-size: 30px;
     padding: 10px;
     color: white;
+    transition-duration: 0.3s; }
+    header .barraMenu li:hover {
+      color: white;
+      text-shadow: 0 0 10px white; }
 
-}
+header .btnDerecha .btnHover {
+  font-family: "corbelB";
+  font-size: 15px;
+  color: white;
+  padding: 10px;
+  background-color: #87119b;
+  border: #87119b 3px solid;
+  border-radius: 50px;
+  margin: 10px 3px;
+  transition-duration: 1s; }
+  header .btnDerecha .btnHover:hover {
+    border: #ec8b61 3px solid;
+    background-color: #ec8b61;
+    color: black; }
 
-.barraMenu:hover {
-    background-image: linear-gradient(to right, #11979B, #87119B, #ec8b61);
-  
-}
+main .texto {
+  margin-top: 10px;
+  margin-bottom: 30px; }
 
-.btnHover {
-    font-family: "CorbelBlack";
-    font-size: 15px;
+main .productosDestacados {
+  border-top: 1px solid black; }
+  main .productosDestacados .subTitulo {
+    padding-top: 20px;
+    font-family: "corbeL";
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 30px; }
+
+.footer {
+  background-image: linear-gradient(to right, #11979b 30%, #87119b, #ec8b61);
+  background-size: cover; }
+  .footer .linkFooter {
     color: white;
+    font-family: "corbeL";
+    font-size: 18px;
+    transition-duration: 0.3s; }
+    .footer .linkFooter:hover {
+      color: white;
+      text-shadow: 0 0 10px white; }
+
+/*----------------------------------------CATALOGO-------------------------------------*/
+.cards {
+  color: white;
+  font-family: "corbeL"; }
+  .cards .tituloCard {
+    font-family: "corbelB";
+    font-size: 25px;
+    padding: 10px; }
+  .cards .textoCard {
+    font-size: 20px; }
+  .cards .precio {
+    font-family: "corbelB";
+    font-size: 30px; }
+  .cards .verMas {
+    font-size: 14px; }
+  .cards .color--CardA {
+    background-color: #11979B; }
+  .cards .color--CardB {
+    background-color: #87119B; }
+  .cards .color--CardC {
+    background-color: #ec8b61; }
+
+/*-------------------------------------CONTACTO-------------------------------*/
+.mainContacto .formContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-family: "corbeL";
+  font-size: 18px; }
+  .mainContacto .formContacto .formContenedor {
+    border: #11979b 3px solid;
+    border-radius: 200px;
+    padding: 70px; }
+
+.mainContacto .btnForm {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  .mainContacto .btnForm .btnFormA {
+    font-family: "corbelB";
+    font-size: 17px;
     padding: 10px;
-    background-color: #87119b;
     border: #87119b 3px solid;
     border-radius: 50px;
-    margin: 3px;
-    transition-duration: 1s;
-}
+    transition-duration: 0.5s; }
+    .mainContacto .btnForm .btnFormA:hover {
+      color: white;
+      background-color: #87119b; }
+  .mainContacto .btnForm .btnFormB {
+    font-family: "corbelB";
+    font-size: 17px;
+    padding: 10px;
+    border: #ec8b61 3px solid;
+    border-radius: 50px;
+    transition-duration: 0.5s; }
+    .mainContacto .btnForm .btnFormB:hover {
+      color: white;
+      background-color: #ec8b61; }
 
-.btnHover:hover {
-    background-color: #ec8b61;
-    color: black;
-    border: solid #ec8b61 3px;
-    
-}
+.mainContacto .linksContacto {
+  padding: 5px; }
+  .mainContacto .linksContacto li {
+    font-family: "corbelB";
+    font-size: 18px; }
 
-.footer{
-    background-image: linear-gradient(to right, #11979B 50%, #87119B, #ec8b61);
-    color: white;
-    font-family: "CorbelBlack";
-    font-size: 16px;
-}
+/*---------------------------------------INGRESAR A TU CUENTA-----------------------*/
+.mainCuenta .formIngresa {
+  font-family: "corbeL";
+  font-size: 20px; }
+  .mainCuenta .formIngresa .btnFormC {
+    font-family: "corbelB";
+    font-size: 17px;
+    padding: 10px;
+    border: #11979b 3px solid;
+    border-radius: 50px;
+    transition-duration: 0.5s;
+    margin-bottom: 15px; }
+    .mainCuenta .formIngresa .btnFormC:hover {
+      color: white;
+      background-color: #11979b; }
 
-.productosDestacados{
-    margin-top: 50px;
+.mainCuenta .formCrea {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  border-top: black 1px solid; }
+  .mainCuenta .formCrea .btnFormA {
+    font-family: "corbelB";
+    font-size: 17px;
+    padding: 10px;
+    border: #ec8b61 3px solid;
+    border-radius: 50px;
+    transition-duration: 0.5s; }
+    .mainCuenta .formCrea .btnFormA:hover {
+      color: white;
+      background-color: #ec8b61; }
 
-}
-
-.comoComprar{
-    margin-top: 50px;
-    margin-bottom: 100px;
-    
-}
-
-
-.boton {
-    margin: 10px;
-    padding: 5px;
-    background-color: white;
-    border: #87119b 3px solid;
-    border-radius: 20px;
-    font-family: "CorbelBlack";
-}
-
-.CardA{
-    background-color: #11979B;
-    color: white;
-}
-
-.CardB{
-    background-color: #87119B;
-    color: white;
-}
-
-.CardC{
-    background-color: #ec8b61;
-    color: white;
-}
-
-.precio{
-    font-family: "CorbelBlack";
-    font-size: 30px;
-}
-
-.tituloCard{
-    font-family: "CorbelBlack";
-    font-size: 25px;
-}
-
-.carrusel{
-    width: 500px;
-    height: auto;
-    padding: 5px;
-    margin-bottom: 100px;
-}
-
-.verMas{
-    font-family: "CorbelLight";
-    color: white;
-    font-size: 12px;
-}
-
-.textoCard{
-    font-family: "CorbelLight";
-    font-size: 18px;
-}
-
-.pInfo{
-    font-family: "CorbelLight";
-    font-size: 18px; 
-}
-
-.tituloPInfo{
-    font-family: "CorbelBlack";
-}
-
-
-
-/* --------------------------------------------------------------------------------------------------------------------------- */
-
-
-
-/*ingresa a tu cuenta*/
-.mainIngresa {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.formCuenta {
-    display: flex;
-    flex-direction: column;
-    border: #11979B 3px solid;
-    border-radius: 130px;
-    padding: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-    font-family: "CorbelLight";
-    font-size: 16px;
-
-}
-
-
-/*como comprar*/
-ol {
-    font-family: "CorbelLight";
-    font-size: 30px;
-    margin-top: 25px;
-    margin-left: 20%;
-}
-
-/*PAGINA CONTACTO*/
-.mainContacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.formContacto {
-    display: flex;
-    flex-direction: column;
-    border: #11979B 3px solid;
-    border-radius: 200px;
-    padding: 70px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 20px;
-    margin-top: 40px;
-    font-family: "CorbelLight";
-    font-size: 16px;
-}
-
-.linksContacto {
-    font-family: "corbelLight";
-    font-size: 20px;
-    margin-top: 20px;
-
-}
-
-.animacionTxt{
-    animation-duration: 2s;
-}
-
-
+/*-------------------------------------------COMO COMPRAR / PRODUCTOS PERSONALIZADOS / ENVIOS-------------------------*/
+.mainOtras {
+  margin-top: 10px;
+  margin-bottom: 50px; }
+  .mainOtras .titulo {
+    text-align: center; }
+  .mainOtras .pasos li {
+    font-size: 20px; }
+  .mainOtras .parrafo {
+    font-size: 20px; }
+    .mainOtras .parrafo .destacado {
+      color: #11979b; }
+  .mainOtras .linkInterno {
+    color: #ec8b61; }
+    .mainOtras .linkInterno:hover {
+      color: #ec8b61;
+      text-shadow: 0 0 10px #ec8b61; }

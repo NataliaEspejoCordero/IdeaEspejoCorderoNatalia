@@ -1,5 +1,9 @@
-$color-principal: #11979B;
-$color-secundario: #87119B;
-$color-terciario: #ec8b61;
+$colores: (
+  primario: #11979b,
+  secundario: #87119b,
+  terciario: #ec8b61,
+  texto: white,
+  gradiente: linear-gradient(to right, #11979b 30%, #87119b, #ec8b61),
+);
 
-$fondo: linear-gradient(to right, #11979B 30%, #87119B, #ec8b61);
+$coloresCard: (CardA: #11979B, CardB: #87119B, CardC: #ec8b61);

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ingresa a tu cuenta o create una">
+    <meta name="keywords" content="tejido, tejidos, tejidos a mano, crochet, dos agujas, tricot, tejidos artesanales">
     <title>Ingresar a tu cuenta</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -18,8 +20,8 @@
 
     <header>
         <div class="p-3 container text-center logo">
-            <img class="animate__animated animate__fadeInRightBig" src="/images/logoNegro.png" alt="logo" width="400px"
-                height="auto">
+            <img class="animate__animated animate__fadeInRightBig" src="../images/logoNegro.png" alt="logo"
+                width="350px" height="auto">
         </div>
         <nav class="p-2 barraMenu navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
@@ -30,104 +32,131 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="mx-auto navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
+                        <li class=" nav-item">
                             <a class="text-white text-decoration-none px-5 nav-link active btnBarraMenu"
-                                aria-current="page" href="/index.html">Inicio</a>
+                                aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="text-white text-decoration-none px-5 nav-link btnBarraMenu"
-                                href="/Pages/catalogo.html">Catalogo</a>
+                                href="catalogo.html">Catalogo</a>
                         </li>
                         <li class="nav-item">
                             <a class="text-white text-decoration-none px-5 nav-link btnBarraMenu"
-                                href="/Pages/contacto.html">Contacto</a>
+                                href="contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="d-grid gap-2 justify-content-end">
-            <a href="/Pages/ingresa-a-tu-cuenta.html"><button class="btnHover btn btn-lg" type="button">Ingresa a tu
+
+        <div class="btnDerecha d-grid gap-2 justify-content-end">
+            <a href="ingresa-a-tu-cuenta.html"><button class="btnHover btn btn-lg" type="button">Ingresa a tu
                     cuenta</button></a>
         </div>
+
     </header>
 
-    <main class="mainIngresa">
-
-        <div class="formCuenta">
-            <h1>
-                Ingresa a tu cuenta
-            </h1>
-
-            <form action="" method="get"></form>
-
-            <label for="nombreUsuario">Usuario</label>
-            <input type="text" name="nombreUsuario" id="nombreUsuario">
-            <label for="password">Contraseña</label>
-            <input type="password" name="password" id="">
-            <input class="boton" type="submit" value="Ingresar">
-        </div>
-
-        <div class="formCuenta">
-            <h1>
-                Crea tu cuenta
-            </h1>
-
-            <form action="" method="get"></form>
-
-            <label for="nombreYApellido">Nombre y Apellido</label>
-            <input type="text" name="nombreYApellido" id="nombreYApellido">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-            <label for="telefono">Telefono</label>
-            <input type="text" name="telefono" id="telefono">
-            <label for="fechaDeNacimiento">Fecha de nacimiento</label>
-            <input type="date" name="fechaDeNacimiento" id="fechaDeNacimiento">
+    <main class="mainCuenta">
+        <div class="container-fluid">
+            <h2 class="titulo text-center">Ingresa a tu cuenta</h2>
+            <div class="formIngresa container col-xxl-4 col-xl-5 col-lg-6 col-md-7">
+                <form action="#">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Usuario / Correo electrónico</label>
+                        <input type="email" class="form-control" name="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="contraseña" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" name="contraseña">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" name="connected" class="form-check-input" id="">
+                        <label for="connected" class="form-check-label">Mantener sesión iniciada</label>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-outline btnFormC w-25 text-center" type="submit"
+                            value="Enviar">Ingresar</button>
+                        <div>
+                            <span>Olvidaste tu contraseña? <a href="#">Recuperala aquí</a></span>
+                        </div>
+                </form>
+            </div>
             
-            <label for="usuario">Usuario</label>
-            <input type="text" name="usuario" id="usuario">
-            <label for="password">Contraseña</label>
-            <input type="password" name="password" id="">
-            <input class="boton" type="submit" value="Crear">
 
-        </div>
+            <div class="formCrea container">
+                <h2 class="titulo text-center">Creá tu cuenta</h2>
+                <form class="formContCrea" action="#">
+                    <div class="mb-3">
+                        <label class="form-label" for="nombreYApellido">Nombre y apellido</label>
+                        <input class="form-control" type="text" name="" id="nombreYApellido" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" name="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="tel" name="telefono" class="form-control" id="">
+                    </div>
+                    <div class="mb-5">
+                        <label for="date" class="form-label">Fecha de nacimiento</label>
+                        <input type="date" name="date" class="form-control" id="">
+                    </div>
 
+                    <div class="mb-3">
+                        <label class="form-label" for="Usuario">Usuario</label>
+                        <input class="form-control" type="text" name="Usuario" id="Usuario" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="contraseña" class="form-label">Crea tu contraseña</label>
+                        <input type="password" class="form-control" name="contraseña">
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 btnFormA container text-center">
+                        <button class="btn btn-outline text-center" type="submit" value="Enviar">Crear cuenta</button>
+                </form>
+
+            </div>
     </main>
-    
-    <div class="container-fluid footer">
-        <div class="row p-5">
-            <div class="col-xs-12 col-md-6 col-xl-3 mb-3 mx-0 px-0">
-                <a href="/index.html"><img src="/images/logoBlanco.png" alt="logoInicio" width="200px" height="auto"></a>
-            </div>
-            <div class="col-xs-12 col-md-6 col-xl-3 mb-3 mx-0 px-0">
-                <div>
-                    <a class="text-white text-decoration-none" href="/pages/catalogo.html">Catalogo</a>
+
+    <footer>
+        <div class="container-fluid footer">
+            <div class="row p-5">
+                <div class="col-xs-12 col-md-6 col-xl-3 mb-3 mx-0 px-0">
+                    <a href="../index.html"><img src="../images/logoBlanco.png" alt="logoInicio" width="250px"
+                            height="auto"></a>
                 </div>
-                <div>
-                    <a class="text-white text-decoration-none" href="/Pages/contacto.html">Contacto</a>
+                <div class="col-xs-12 col-md-6 col-xl-3 mb-3 mx-0 px-0">
+                    <div>
+                        <a class="linkFooter text-decoration-none" href="catalogo.html">Catalogo</a>
+                    </div>
+                    <div>
+                        <a class="linkFooter text-decoration-none" href="contacto.html">Contacto</a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-xs-12 col-md-6 col-xl-3 mb-3 mx-0 px-0">
-                <div>
-                    <a class="text-white text-decoration-none" href="/Pages/productos-personalizados.html">Productos
-                        Personalizados</a>
+                <div class="col-xs-12 col-md-6 col-xl-3 mb-3 mx-0 px-0">
+                    <div>
+                        <a class="linkFooter text-decoration-none" href="productos-personalizados.html">Productos
+                            Personalizados</a>
+                    </div>
+                    <div>
+                        <a class="linkFooter text-decoration-none" href="como-comprar.html">Como comprar</a>
+                    </div>
+                    <div>
+                        <a class="linkFooter text-decoration-none" href="envios.html">Envios</a>
+                    </div>
                 </div>
-                <div>
-                    <a class="text-white text-decoration-none" href="/Pages/como-comprar.htm">Como comprar</a>
+                <div class="col-xs-12 col-md-6 col-xl-3 mb-3 mx-0 px-0">
+                    <p class="linkFooter">Seguinos en <a href="https://www.instagram.com/meextranaaranatejidos/"> <img
+                                src="../images/instagram blanco.png" alt="" width="30px" height="auto"> </a></p>
                 </div>
-                <div>
-                    <a class="text-white text-decoration-none" href="/Pages/envios.html">Envios</a>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-6 col-xl-3 mb-3 mx-0 px-0">
-                <p>Seguinos en <a href="https://www.instagram.com/meextranaaranatejidos/"> <img
-                            src="/images/instagram blanco.png" alt="" width="30px" height="auto"> </a></p>
             </div>
         </div>
-    </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>

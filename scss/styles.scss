@@ -1,75 +1,257 @@
-@import 'variables';
-@import 'color'
+@import "color";
+@import "tipografia";
+@import 'mixins';
+
+
+.info{
+  font-family: "corbeL";
+  font-size: 18px;
+  text-align: justify;
+}
+
+.principal {
+  font-family: "corbelB";
+  font-size: 40px;
+  padding: 10px;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+}
 
 
 
-.barraMenu{
-    background-color: $color-principal;
+/*------------------------INDEX-------------------------*/
+header {
+  .barraMenu {
+    background-color: map-get($colores, primario);
     background-size: cover;
 
-    &:hover{
-        background-image: $fondo;
+    &:hover {
+      background-image: map-get($colores, gradiente);
     }
 
-        li{
-            font-family: "brittany";
-            font-size: 30px;
-            color: white;
-            padding: 10px;
-}
-}
+    li {
+      font-family: "brittany";
+      font-size: 30px;
+      padding: 10px;
+      color: map-get($colores, texto);
+      transition-duration: 0.3s;
 
-.btnDerecha{
-    .btnHover{
-    font-family: "corbelB";
-    font-size: 15px;
-    color: white;
-    padding: 10px;
-    background-color: $color-secundario;
-    border: $color-secundario 3px solid;
-    border-radius: 50px;
-    margin: 3px;
-    transition-duration: 1s;
+      &:hover {
+        color: map-get($colores, texto);
+        text-shadow: 0 0 10px white;
+      }
+    }
+  }
 
-    &:hover{
-        background-color: $color-terciario;
+  .btnDerecha {
+    .btnHover {
+      font-family: "corbelB";
+      font-size: 15px;
+      color: map-get($colores, texto);
+      padding: 10px;
+      background-color: map-get($colores, secundario);
+      border: map-get($colores, secundario) 3px solid;
+      border-radius: 50px;
+      margin: 10px 3px;
+      transition-duration: 1s;
+
+      &:hover {
+        border: map-get($colores, terciario) 3px solid;
+        background-color: map-get($colores, terciario);
         color: black;
-        border: solid $color-terciario 3px
-        }
+      }
     }
+  }
 }
 
-
-.parrafoInfo{
+main {
+  .texto {
     margin-top: 10px;
-    margin-bottom: 10px;
-    .tituloInfo{
-        font-family: "corbelB";
-        font-size: 30px;
+    margin-bottom: 30px;
+
+    .titulo {
+      @extend .principal;
     }
-    .textoInfo{
-        font-family: "corbelL";
-        font-size: 18px;
+
+    .parrafo {
+      @extend .info;
     }
+  }
+
+  .productosDestacados {
+    border-top: 1px solid black;
+
+    .subTitulo {
+      padding-top: 20px;
+      font-family: "corbeL";
+      font-size: 30px;
+      font-weight: bolder;
+      margin-top: 30px;
+    }
+  }
 }
 
-.footer{
-    background-image: $fondo;
-    .menuUno{
-        font-family: "corbelL";
-        font-size: 16px;
-        font-style: italic;
-    }
-    .menuDos{
-        font-family: "corbelB";
-        font-size: 16px;
-        font-style: italic;
-    }
+.footer {
+  background-image: map-get($colores, gradiente);
+  background-size: cover;
 
-.linkIg{
-    font-family: "corbelB";
+  .linkFooter {
+    color: map-get($colores, texto);
+    font-family: "corbeL";
     font-size: 18px;
-    color: white;
+    transition-duration: 0.3s;
+
+    &:hover {
+      color: map-get($colores, texto);
+      text-shadow: 0 0 10px white;
+    }
+  }
 }
 
+/*----------------------------------------CATALOGO-------------------------------------*/
+.cards {
+  color: map-get($colores, texto);
+  font-family: "corbeL";
+
+  .tituloCard {
+    font-family: "corbelB";
+    font-size: 25px;
+    padding: 10px;
+  }
+  .textoCard {
+    font-size: 20px;
+  }
+
+  .precio {
+   font-family: "corbelB";
+   font-size: 30px;   
+  }
+
+  .verMas {   
+    font-size: 14px;
+  }
+
+  @each $card,
+  $color in $coloresCard {
+    .color--#{$card} {
+      background-color: $color;
+    }
+  }
+
+  
 }
+
+/*-------------------------------------CONTACTO-------------------------------*/
+.mainContacto {
+  .titulo {
+    @extend .principal;
+  }
+
+  .parrafo {
+    @extend .info;
+  }
+
+  .formContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-family: "corbeL";
+    font-size: 18px;
+
+    .formContenedor {
+      border: map-get($colores, primario) 3px solid;
+      border-radius: 200px;
+      padding: 70px;
+    }
+  }
+
+  .btnForm {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    .btnFormA {
+      @include botonFormulario (secundario);
+    }
+
+    .btnFormB {
+      @include botonFormulario (terciario);
+    }
+  }
+
+  .linksContacto {
+    padding: 5px;
+
+    li {
+      font-family: "corbelB";
+      font-size: 18px;
+    }
+  }
+}
+
+/*---------------------------------------INGRESAR A TU CUENTA-----------------------*/
+.mainCuenta {
+  .titulo {
+    @extend .principal;
+  }
+
+  .formIngresa {
+    font-family: "corbeL";
+    font-size: 20px;
+
+
+    .btnFormC {
+      @include botonFormulario(primario);
+      margin-bottom: 15px;
+
+    }
+  }
+
+  .formCrea {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border-top: black 1px solid;
+
+    .btnFormA {
+      @include botonFormulario(terciario);
+    }
+  }
+}
+
+/*-------------------------------------------COMO COMPRAR / PRODUCTOS PERSONALIZADOS / ENVIOS-------------------------*/
+.mainOtras{
+  margin-top: 10px;
+  margin-bottom: 50px;
+  .titulo{
+    @extend .principal;
+    text-align: center;
+  }
+  .pasos{
+    li{
+    @extend .info;
+    font-size: 20px;
+    }
+  }
+
+  .parrafo{
+    @extend .info;
+    font-size: 20px;
+    .destacado{
+      color: #11979b;
+    }
+  }
+
+  .linkInterno{
+    color: map-get($colores, terciario);
+    &:hover {
+      color: map-get($colores, terciario);
+      text-shadow: 0 0 10px #ec8b61;
+    }
+  }
+}
+
+
