@@ -14,15 +14,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
-
-
 <body class="container-fluid">
 
     <header>
-        <div class="p-3 container text-center logo">
+        <div class="col-xl-6 col-lg-5 col-md-4 p-3 container text-center logo">
             <img class="animate__animated animate__fadeInRightBig" src="../images/logoNegro.png" alt="logo"
-                width="350px" height="auto">
+                width="300px" height="auto">
         </div>
+
         <nav class="p-2 barraMenu navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -53,14 +52,12 @@
             <a href="ingresa-a-tu-cuenta.html"><button class="btnHover btn btn-lg" type="button">Ingresa a tu
                     cuenta</button></a>
         </div>
-
     </header>
 
     <main>
         <div class="mainContacto container-fluid">
             <div class="container col-xl-6 mx-auto p-2 mt-4">
-                <h2 class="titulo text-center">Mantengamos el contacto</h2>
-
+                <h1 class="titulo text-center">Mantengamos el contacto</h1>
                 <p class="parrafo text-center mate_animated animate__fadeIn animacionTxt">Te dejamos un box donde nos
                     podes escribir tus consultas y mas abajo tenes todas las
                     opciones para comunicarte con nosotros. <br>
@@ -71,37 +68,32 @@
             <div class="container-fluid ">
                 <form id="" class=" container formContacto" action="" method="get">
                     <div class="col-xxl-4 col-xl-5 col-lg-6 col-md-7 formContenedor">
-
-                    <div class="">
-                        <label class="form-label mt-3" for="nombreYApellido">Nombre y apellido</label>
-                        <input class="form-control" type="text" name="" id="nombreYApellido"
-                            placeholder="Cosme Fulanito" required>
+                        <div>
+                            <label class="form-label mt-3" for="nombreYApellido">Nombre y apellido</label>
+                            <input class="form-control" type="text" name="" id="nombreYApellido"
+                                placeholder="Cosme Fulanito" required>
+                        </div>
+                        <div>
+                            <label class="form-label mt-3" for="email">Email</label>
+                            <input class="form-control" type="email" name="mail" id=""
+                                placeholder="cosme_fulanito@mail.com" required>
+                        </div>
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" name="" id="novedades">
+                            <label class="form-check-label" for="novedades">Click para recibir las novedades</label>
+                        </div>
+                        <div class="text-center">
+                            <label for="mensaje"></label>
+                            <textarea class="form-control" name="" id="mensaje" cols="30" rows="10"
+                                placeholder="Escribir aqui..."></textarea>
+                        </div>
                     </div>
-                    <div class="">
-                        <label class="form-label mt-3" for="email">Email</label>
-                        <input class="form-control" type="email" name="mail" id="" placeholder="cosme_fulanito@mail.com"
-                            required>
-                    </div>
-                    <div class="form-check mt-3">
-                        <input class="form-check-input" type="checkbox" name="" id="novedades">
-                        <label class="form-check-label" for="novedades">Click para recibir las novedades</label>
-                    </div>
-                    <div class="text-center">
-                        <label for="mensaje"></label>
-                        <textarea class="form-control" name="" id="mensaje" cols="30" rows="10"
-                            placeholder="Escribir aqui..."></textarea>
-                    </div>
-                </div>
-                    <div class="col-md-6 col-lg-6 btnForm container text-center">
-                        <button class="btn btn-outline btnFormA w-25 text-center" type="submit"
+                    <div class="col-md-4 col-lg-6 btnForm container text-center">
+                        <button class="col-md-6 col-lg-6 btn btnFormA container text-center" type="submit"
                             value="Enviar">Enviar</button>
-                        <button class="btn btn-outline btnFormB w-25 text-center" type="reset"
-                            value="Limpiar">Limpiar</button>
                     </div>
-                
                 </form>
             </div>
-
 
             <div class="container-fluid text-center text text-decoration-none linksContacto">
                 <ul>
@@ -112,7 +104,6 @@
             </div>
         </div>
     </main>
-
 
     <footer>
         <div class="container-fluid footer">
@@ -148,9 +139,11 @@
             </div>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
         </script>
+        
 </body>
 
 </html>

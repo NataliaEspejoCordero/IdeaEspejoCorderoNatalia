@@ -17,10 +17,11 @@
 <body class="container-fluid">
 
     <header>
-        <div class="p-3 container text-center logo">
-            <img class="animate__animated animate__fadeInRightBig" src="images/logoNegro.png" alt="logo" width="350px"
+        <div class="col-xl-6 col-lg-5 col-md-4 p-3 container text-center">
+            <img class="animate__animated animate__fadeInRightBig" src="images/logoNegro.png" alt="logo" width="300px"
                 height="auto">
         </div>
+
         <nav class="p-2 barraMenu navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -51,45 +52,38 @@
             <a href="Pages/ingresa-a-tu-cuenta.html"><button class="btnHover btn btn-lg" type="button">Ingresa a tu
                     cuenta</button></a>
         </div>
-
     </header>
 
-
     <main>
-        <div id="mainInicio">
-
-            <div class="container text-center video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Df5AWE_9Mow?autoplay=1"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen mute></iframe>
+        <div class="container col-xl-6 col-lg-7 col-md-8">
+            <div class="ratio ratio-16x9 text-center mx-auto p-2 mt-4">
+                <video autoplay controls src="videos/VideoInspiracion.mp4"></video>
             </div>
+        </div>
 
-            <div class="texto container col-xl-6 mx-auto p-2 mt-4">
-                <h2 class="titulo text-center" id="#sobreNosotros">NOS PRESENTAMOS</h2>
-                <p class="text-center parrafo">La frase "Tejer es de abuela" fue el motor que impulso a la marca a
-                    querer resignificar los tejidos artesanales.
-                    Buscamos a través del diseño, los colores y las texturas, modernizar los tejidos, que puedas
-                    combinarlos con tus accesorios y lleves un toque especial.
-                    El concepto que queremos tener siempre presente es de modernidad, pero sin perder ese gustito por lo
-                    vintage.
-                    Los tejidos son realizados 100% a mano, cada uno de ellos, eso hace que sean especiales, únicos y
-                    queremos que vos te sientas igual cuando lleves algo de Me extraña araña puesto.
-                </p>
-            </div>
+        <div class="texto container col-xl-6 mx-auto p-2 mt-4">
+            <h1 class="titulo text-center">NOS PRESENTAMOS</h1>
+            <p class="parrafo text-center">La frase "Tejer es de abuela" fue el motor que impulso a la marca a
+                querer resignificar los tejidos artesanales.
+                Buscamos a través del diseño, los colores y las texturas, modernizar los tejidos, que puedas
+                combinarlos con tus accesorios y lleves un toque especial.
+                El concepto que queremos tener siempre presente es de modernidad, pero sin perder ese gustito por lo
+                vintage.
+                Los tejidos son realizados 100% a mano, cada uno de ellos, eso hace que sean especiales, únicos y
+                queremos que vos te sientas igual cuando lleves algo de Me extraña araña puesto.
+            </p>
+        </div>
 
-            <div class="texto container container col-xl-6 mx-auto p-2 mt-4 ">
-                <h2 class="titulo text-center">EN QUE NOS INSPIRAMOS</h2>
-                <p class="parrafo text-center">En la calidez de los tejidos a mano, en el amor que le ponían las abuelas
-                    y las madres cuando tejían una prenda pensando en quien la iba a usar.
-                    En los colores que nos regalan las estaciones, los naranjas del otoño, el azul y violeta del
-                    invierno, amarillo y rojos de un día de verano y la explosión de colores de la primavera.
-                    Cada persona es única y nuestros tejidos también y eso hace especial cada vez que agarramos las
-                    agujas y los hilos, siempre es una experiencia diferente.
-                    Te invitamos a que te sientas igual de especial.
-                </p>
-
-            </div>
+        <div class="texto container container col-xl-6 mx-auto p-2 mt-4 ">
+            <h1 class="titulo text-center">EN QUE NOS INSPIRAMOS</h1>
+            <p class="parrafo text-center">En la calidez de los tejidos a mano, en el amor que le ponían las abuelas
+                y las madres cuando tejían una prenda pensando en quien la iba a usar.
+                En los colores que nos regalan las estaciones, los naranjas del otoño, el azul y violeta del
+                invierno, amarillo y rojos de un día de verano y la explosión de colores de la primavera.
+                Cada persona es única y nuestros tejidos también y eso hace especial cada vez que agarramos las
+                agujas y los hilos, siempre es una experiencia diferente.
+                Te invitamos a que te sientas igual de especial.
+            </p>
         </div>
 
         <div class="container productosDestacados">
@@ -127,8 +121,8 @@
         </div>
     </main>
 
-    <footer>
-        <div class="container-fluid footer">
+    <footer class="container-fluid footer">
+        <div>
             <div class="row p-5">
                 <div class="col-xs-12 col-md-6 col-xl-3 mb-3 mx-0 px-0">
                     <a href="#"><img src="images/logoBlanco.png" alt="logoInicio" width="250px" height="auto"></a>
@@ -161,13 +155,10 @@
         </div>
     </footer>
 
-
-
-
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
         </script>
+
 </body>
 
 </html>

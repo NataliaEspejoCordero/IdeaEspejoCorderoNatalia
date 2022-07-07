@@ -14,15 +14,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
-
-
 <body class="container-fluid">
 
     <header>
-        <div class="p-3 container text-center logo">
+        <div class="col-xl-6 col-lg-5 col-md-4 p-3 container text-center logo">
             <img class="animate__animated animate__fadeInRightBig" src="../images/logoNegro.png" alt="logo"
-                width="350px" height="auto">
+                width="300px" height="auto">
         </div>
+
         <nav class="p-2 barraMenu navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -53,12 +52,11 @@
             <a href="ingresa-a-tu-cuenta.html"><button class="btnHover btn btn-lg" type="button">Ingresa a tu
                     cuenta</button></a>
         </div>
-
     </header>
 
     <main class="mainCuenta">
         <div class="container-fluid">
-            <h2 class="titulo text-center">Ingresa a tu cuenta</h2>
+            <h1 class="titulo text-center">Ingresa a tu cuenta</h1>
             <div class="formIngresa container col-xxl-4 col-xl-5 col-lg-6 col-md-7">
                 <form action="#">
                     <div class="mb-3">
@@ -73,18 +71,17 @@
                         <input type="checkbox" name="connected" class="form-check-input" id="">
                         <label for="connected" class="form-check-label">Mantener sesión iniciada</label>
                     </div>
-                    <div class="text-center">
-                        <button class="btn btn-outline btnFormC w-25 text-center" type="submit"
-                            value="Enviar">Ingresar</button>
-                        <div>
-                            <span>Olvidaste tu contraseña? <a href="#">Recuperala aquí</a></span>
-                        </div>
+                    <div class="col-md-6 col-lg-6 btnFormC container text-center mt-5 mb-5">
+                        <button class="btn btn-outline text-center" type="submit" value="Enviar">Ingresar</button>
+                    </div>
+                    <div>
+                        <span>Olvidaste tu contraseña? <a href="#">Recuperala aquí</a></span>
+                    </div>
                 </form>
             </div>
             
-
-            <div class="formCrea container">
-                <h2 class="titulo text-center">Creá tu cuenta</h2>
+            <div class="formCrea container col-xxl-4 col-xl-5 col-lg-6 col-md-7">
+                <h2 class="subTitulo text-center">Creá tu cuenta</h2>
                 <form class="formContCrea" action="#">
                     <div class="mb-3">
                         <label class="form-label" for="nombreYApellido">Nombre y apellido</label>
@@ -102,7 +99,6 @@
                         <label for="date" class="form-label">Fecha de nacimiento</label>
                         <input type="date" name="date" class="form-control" id="">
                     </div>
-
                     <div class="mb-3">
                         <label class="form-label" for="Usuario">Usuario</label>
                         <input class="form-control" type="text" name="Usuario" id="Usuario" required>
@@ -111,11 +107,9 @@
                         <label for="contraseña" class="form-label">Crea tu contraseña</label>
                         <input type="password" class="form-control" name="contraseña">
                     </div>
-
-                    <div class="col-md-6 col-lg-6 btnFormA container text-center">
+                    <div class="col-md-6 col-lg-6 btnFormA container text-center mt-5">
                         <button class="btn btn-outline text-center" type="submit" value="Enviar">Crear cuenta</button>
                 </form>
-
             </div>
     </main>
 
@@ -157,6 +151,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
         </script>
+
 </body>
 
 </html>

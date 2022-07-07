@@ -3,7 +3,7 @@
 @import 'mixins';
 
 
-.info{
+.info {
   font-family: "corbeL";
   font-size: 18px;
   text-align: justify;
@@ -24,6 +24,8 @@ ul {
 
 /*------------------------INDEX-------------------------*/
 header {
+
+
   .barraMenu {
     background-color: map-get($colores, primario);
     background-size: cover;
@@ -68,10 +70,11 @@ header {
 }
 
 main {
+
   .texto {
     margin-top: 10px;
     margin-bottom: 30px;
-
+    
     .titulo {
       @extend .principal;
     }
@@ -121,16 +124,17 @@ main {
     font-size: 25px;
     padding: 10px;
   }
+
   .textoCard {
     font-size: 20px;
   }
 
   .precio {
-   font-family: "corbelB";
-   font-size: 30px;   
+    font-family: "corbelB";
+    font-size: 30px;
   }
 
-  .verMas {   
+  .verMas {
     font-size: 14px;
   }
 
@@ -141,7 +145,7 @@ main {
     }
   }
 
-  
+
 }
 
 /*-------------------------------------CONTACTO-------------------------------*/
@@ -205,7 +209,7 @@ main {
 
 
     .btnFormC {
-      @include botonFormulario(primario);
+      @include botonFormulario (primario);
       margin-bottom: 15px;
 
     }
@@ -223,35 +227,37 @@ main {
 }
 
 /*-------------------------------------------COMO COMPRAR / PRODUCTOS PERSONALIZADOS / ENVIOS-------------------------*/
-.mainOtras{
+.mainOtras {
   margin-top: 10px;
   margin-bottom: 50px;
-  .titulo{
+
+  .titulo {
     @extend .principal;
     text-align: center;
   }
-  .pasos{
-    li{
-    @extend .info;
-    font-size: 20px;
+
+  .pasos {
+    li {
+      @extend .info;
+      font-size: 20px;
     }
   }
 
-  .parrafo{
+  .parrafo {
     @extend .info;
     font-size: 20px;
-    .destacado{
+
+    .destacado {
       color: #11979b;
     }
   }
 
-  .linkInterno{
+  .linkInterno {
     color: map-get($colores, terciario);
+
     &:hover {
       color: map-get($colores, terciario);
       text-shadow: 0 0 10px #ec8b61;
     }
   }
 }
-
-
